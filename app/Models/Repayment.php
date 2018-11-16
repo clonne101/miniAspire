@@ -1,10 +1,10 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Repayments extends Model
+class Repayment extends Model
 {
     protected $table = 'asp_repayments';
 }
