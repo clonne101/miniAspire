@@ -18,7 +18,7 @@ class CreateRepaymentsTable extends Migration
             $table->integer('loan_id')->index();
             $table->decimal('amount_paid', 8, 2);
             $table->decimal('remaining_balance', 8, 2);
-            $table->enum('status', ['SUCCESSFUL','FAILED']);
+            $table->enum('status', ['SUCCESSFUL','FAILED','CLOSED']);
             $table->timestamps();
         });
     }

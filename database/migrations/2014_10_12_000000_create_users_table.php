@@ -25,6 +25,7 @@ class CreateUsersTable extends Migration
             $table->string('bank_account_name')->nullable();
             $table->string('bank_account_phone_number')->nullable();
             $table->string('address')->nullable();
+            $table->string('api_token')->index()->unique()->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
