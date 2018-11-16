@@ -30,7 +30,7 @@ class UserCreated extends Mailable
      */
     public function build()
     {
-        return $this->from('example@example.com')
+        return $this->from('hello@miniaspire.com')
                     ->markdown('emails.users.create')
                     ->with([
                         'name' => $this->createdUser->name,

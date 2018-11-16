@@ -6,3 +6,5 @@ use Illuminate\Http\Request;
 Route::post('user/create', 'ApiController@createUser');
 Route::post('user/login', 'ApiController@userLogin');
 Route::post('user/loan', 'ApiController@userLoan');
+Route::post('user/repayloan', 'ApiController@userRepayLoan');
+Route::post('user/loanstatus', 'ApiController@userLoanStatus');
